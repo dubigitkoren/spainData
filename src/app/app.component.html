@@ -1,2 +1,36 @@
-<h3>try it</h3>
+<style>
+a.high:hover {
+  color: #ff6a25;
+}
+a.high{
+  color: rgba(0,0,0,.55);
+  display: block;
+  text-decoration: none;
+  padding: .5rem 1rem;
+}
+a.active{
+  color: rgba(0,0,0,.9);
+}
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="active high" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="high"  routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="high" routerLink="/data">Data</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>
